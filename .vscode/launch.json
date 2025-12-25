@@ -1,0 +1,25 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/inference.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "--model", "JiT-B/16",
+                "--img_size", "256",
+                "--noise_scale", "1.0",
+                "--cfg", "3.0",
+                "--interval_min", "0.1",
+                "--interval_max", "1.0",
+                // "--resume", "",
+            ]
+        }
+    ]
+}
